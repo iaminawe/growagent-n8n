@@ -3,8 +3,8 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'sjwc-n8n'
-primary_region = 'iad'
+app = 'grow-agent-n8n'
+primary_region = 'yyz'
 
 [build]
   image = 'n8nio/n8n'
@@ -13,14 +13,14 @@ primary_region = 'iad'
   EXECUTIONS_DATA_MAX_AGE = '168'
   EXECUTIONS_DATA_PRUNE = 'true'
   EXECUTIONS_DATA_PRUNE_MAX_COUNT = '10000'
-  GENERIC_TIMEZONE = 'America/Chicago'
+  GENERIC_TIMEZONE = 'America/Vancouver'
   N8N_DIAGNOSTICS_ENABLED = 'false'
   N8N_HIRING_BANNER_ENABLED = 'false'
-  N8N_HOST = 'sjwc-n8n.fly.dev'
+  N8N_HOST = 'grow-agent-n8n.fly.dev'
   N8N_PORT = '8080'
   N8N_PROTOCOL = 'https'
   TINI_SUBREAPER = 'true'
-  WEBHOOK_URL = 'https://sjwc-n8n.fly.dev'
+  WEBHOOK_URL = 'grow-agent-n8n.fly.dev'
 
 [[mounts]]
   source = 'n8n_vol'
